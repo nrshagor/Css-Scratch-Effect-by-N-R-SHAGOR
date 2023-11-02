@@ -147,6 +147,44 @@
     .hover-scratch-line:nth-child(3) {
       left: 10px;
     }
+    /* Scratch Effect */
+    .scratch-container {
+      position: relative;
+      bottom: 321px;
+      right: 32px;
+    }
+    .scratch {
+      position: absolute;
+      display: none;
+    }
+    .scratch-line {
+      position: absolute;
+      height: 657px;
+      width: 21px;
+      background: linear-gradient(276deg, #d70000, #6f0101);
+      border: 1px solid rgb(255, 0, 0);
+      border-top-left-radius: 96%;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 1px;
+      transform: matrix3d(2, -32, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10, 0, 0, 2);
+      animation: fadeOut 2s ease-in;
+      opacity: 1;
+    }
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .scratch-line:nth-child(2) {
+      left: 25px;
+    }
+    .scratch-line:nth-child(3) {
+      left: 47px;
+    }
   </style>
   <body>
     <h1>Code For Fun</h1>
