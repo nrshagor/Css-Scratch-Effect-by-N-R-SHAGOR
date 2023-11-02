@@ -33,5 +33,22 @@
         </div>
       </div>
     </div>
+    <!-- Script  -->
+    <script>
+      async function hitme() {
+        const button = document.getElementById("scratchButton");
+        const scratch = document.getElementById("scratch");
+        scratch.style.display = "block";
+        button.style.display = "none";
+        await new Promise((wati) => setTimeout(wati, 2000));
+        hideScratch();
+      }
+      function hideScratch() {
+        const button = document.getElementById("scratchButton");
+        const scratch = document.getElementById("scratch");
+        scratch.style.display = "none";
+        button.style.display = "block";
+      }
+    </script>
   </body>
 </html>
